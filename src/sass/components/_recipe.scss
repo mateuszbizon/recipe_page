@@ -1,0 +1,25 @@
+.recipe {
+	width: clamp(320px, 70%, 500px);
+	background-color: #fff;
+	margin: 0 auto;
+	border-radius: 8px;
+
+	&__img-box {
+		width: clamp(320px, 100%, 500px);
+		border-radius: 8px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__img {
+		width: 100%;
+		border-radius: 8px;
+	}
+}
+
+@media (min-width: 576px) {
+	.recipe {
+		padding: 20px;
+        margin: 50px auto 0;
+	}
+}
