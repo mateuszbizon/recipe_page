@@ -1,11 +1,15 @@
 .recipe {
-	width: clamp(320px, 70%, 500px);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: clamp(320px, 70%, 650px);
 	background-color: #fff;
 	margin: 0 auto;
 	border-radius: 8px;
+	padding: 0 0 20px;
 
 	&__img-box {
-		width: clamp(320px, 100%, 500px);
+		width: clamp(320px, 100%, 650px);
 		border-radius: 8px;
 		margin: 0 auto;
 		text-align: center;
@@ -15,11 +19,30 @@
 		width: 100%;
 		border-radius: 8px;
 	}
+
+	&__main-box {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 0 20px;
+	}
+
+	&__title {
+		font-weight: 500;
+	}
+
+	&__description {
+		color: #484848;
+		line-height: 25px;
+	}
 }
 
 @media (min-width: 576px) {
 	.recipe {
-		padding: 20px;
-        margin: 50px auto 0;
+		margin: 50px auto 0;
+
+		&__img-box {
+			padding: 20px 20px 0 20px;
+		}
 	}
 }
