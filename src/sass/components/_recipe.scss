@@ -1,3 +1,5 @@
+@use "../abstract/colors" as *;
+
 .recipe {
 	display: flex;
 	flex-direction: column;
@@ -32,8 +34,33 @@
 	}
 
 	&__description {
-		color: #484848;
+		color: $secondary-color;
 		line-height: 25px;
+	}
+
+	&__preparation {
+		background-color: $bonus-background-color;
+		border-radius: 8px;
+		padding: 20px;
+	}
+
+	&__preparation-title {
+		color: $bonus-color;
+		font-weight: 600;
+		font-size: 19px;
+		margin-bottom: 15px;
+	}
+
+	&__preparation-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: 15px;
+		color: $secondary-color;
+	}
+
+	&__preparation-list-header {
+		font-weight: 600;
 	}
 }
 
