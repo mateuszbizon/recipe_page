@@ -62,6 +62,20 @@
 	&__preparation-list-header {
 		font-weight: 600;
 	}
+
+	&__ingredients-title {
+		color: $main-color;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+
+	&__ingredients-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: 15px;
+		color: $secondary-color;
+	}
 }
 
 @media (min-width: 576px) {
