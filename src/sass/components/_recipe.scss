@@ -58,7 +58,7 @@
 
 	&__preparation-list-item {
 		color: $secondary-color;
-		@include list-item;
+		@include list-item($bonus-color);
 	}
 
 	&__preparation-list-header {
@@ -77,7 +77,7 @@
 
 	&__ingredients-list-item {
 		color: $secondary-color;
-		@include list-item;
+		@include list-item($main-color);
 	}
 }
 
