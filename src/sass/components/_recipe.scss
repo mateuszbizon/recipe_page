@@ -39,6 +39,17 @@
 		line-height: 25px;
 	}
 
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin-left: 15px;
+	}
+
+	&__list-header-text {
+		font-weight: 600;
+	}
+
 	&__preparation {
 		background-color: $bonus-background-color;
 		border-radius: 8px;
@@ -52,32 +63,26 @@
 		margin-bottom: 15px;
 	}
 
-	&__preparation-list {
-		@include list;
-	}
-
 	&__preparation-list-item {
-		color: $secondary-color;
-		@include list-item($bonus-color);
+		@include list-item($bonus-color, $secondary-color);
 	}
 
-	&__preparation-list-header {
-		font-weight: 600;
+	&__ingredients,
+	&__instructions {
+		border-bottom: 1px solid $border-color;
+		padding: 0 0 30px;
 	}
 
-	&__ingredients-title {
+	&__ingredients-title,
+	&__instructions-title {
 		color: $main-color;
 		font-weight: 600;
 		margin-bottom: 15px;
 	}
 
-	&__ingredients-list {
-		@include list;
-	}
-
-	&__ingredients-list-item {
-		color: $secondary-color;
-		@include list-item($main-color);
+	&__ingredients-list-item,
+	&__instructions-list-item {
+		@include list-item($main-color, $secondary-color);
 	}
 }
 

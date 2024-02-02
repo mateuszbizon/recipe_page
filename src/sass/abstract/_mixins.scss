@@ -1,14 +1,8 @@
-@mixin list {
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	margin-left: 15px;
-}
-
-@mixin list-item($color) {
+@mixin list-item($markerColor, $color) {
 	padding-left: 15px;
+	color: $color;
 
 	&::marker {
-		color: $color;
+		color: $markerColor;
 	}
 }
