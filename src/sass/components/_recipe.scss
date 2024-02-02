@@ -56,7 +56,15 @@
 		flex-direction: column;
 		gap: 10px;
 		margin-left: 15px;
+	}
+
+	&__preparation-list-item {
 		color: $secondary-color;
+		padding-left: 15px;
+
+		&::marker {
+			color: $bonus-color;
+		}
 	}
 
 	&__preparation-list-header {
@@ -74,7 +82,15 @@
 		flex-direction: column;
 		gap: 10px;
 		margin-left: 15px;
+	}
+
+	&__ingredients-list-item {
 		color: $secondary-color;
+		padding-left: 15px;
+
+		&::marker {
+			color: $main-color;
+		}
 	}
 }
 
