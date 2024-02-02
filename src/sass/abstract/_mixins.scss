@@ -1,0 +1,16 @@
+@use './colors' as *;
+
+@mixin list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-left: 15px;
+}
+
+@mixin list-item {
+	padding-left: 15px;
+
+	&::marker {
+		color: $bonus-color;
+	}
+}

@@ -1,4 +1,5 @@
 @use "../abstract/colors" as *;
+@use "../abstract/mixins" as *;
 
 .recipe {
 	display: flex;
@@ -52,19 +53,12 @@
 	}
 
 	&__preparation-list {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		margin-left: 15px;
+		@include list;
 	}
 
 	&__preparation-list-item {
 		color: $secondary-color;
-		padding-left: 15px;
-
-		&::marker {
-			color: $bonus-color;
-		}
+		@include list-item;
 	}
 
 	&__preparation-list-header {
@@ -78,19 +72,12 @@
 	}
 
 	&__ingredients-list {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		margin-left: 15px;
+		@include list;
 	}
 
 	&__ingredients-list-item {
 		color: $secondary-color;
-		padding-left: 15px;
-
-		&::marker {
-			color: $main-color;
-		}
+		@include list-item;
 	}
 }
 
