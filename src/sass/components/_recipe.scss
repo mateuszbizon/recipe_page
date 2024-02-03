@@ -5,14 +5,13 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	width: clamp(320px, 70%, 650px);
+	width: clamp(320px, 100%, 650px);
 	background-color: #fff;
 	margin: 0 auto;
 	border-radius: 8px;
 	padding: 0 0 20px;
 
 	&__img-box {
-		width: clamp(320px, 100%, 650px);
 		border-radius: 8px;
 		margin: 0 auto;
 		text-align: center;
@@ -106,7 +105,7 @@
 	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 	.recipe {
 		margin: 50px auto 20px;
 
