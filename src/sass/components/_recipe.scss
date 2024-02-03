@@ -72,13 +72,37 @@
 	}
 
 	&__ingredients-title,
-	&__instructions-title {
+	&__instructions-title,
+	&__nutrition-title {
 		@include title($main-color);
 	}
 
 	&__ingredients-list-item,
 	&__instructions-list-item {
 		@include list-item($main-color, $secondary-color);
+	}
+
+	&__nutrition-description {
+		margin-bottom: 15px;
+	}
+
+	&__nutrition-table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	&__nutrition-table-row:not(:last-child) {
+		border-bottom: 1px solid $border-color;
+	}
+
+	&__nutrition-table-text {
+		color: $secondary-color;
+		padding: 10px 0 10px 30px;
+	}
+
+	&__nutrition-table-number {
+		color: $main-color;
+		font-weight: 600;
 	}
 }
 
