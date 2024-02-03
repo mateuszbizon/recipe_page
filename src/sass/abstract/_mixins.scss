@@ -1,3 +1,9 @@
+@mixin title($color) {
+	color: $color;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
 @mixin list-item($markerColor, $color) {
 	padding-left: 15px;
 	color: $color;
